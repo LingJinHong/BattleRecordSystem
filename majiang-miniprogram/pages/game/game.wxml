@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="card row-between">
+    <view class="title">对局列表</view>
+    <view class="btn-primary" bindtap="goCreate">创建对局</view>
+  </view>
+
+  <view class="card" wx:if="{{gameList.length}}">
+    <view class="game-item" wx:for="{{gameList}}" wx:key="id" data-id="{{item.id}}" bindtap="goDetail">
+      <view class="row-between">
+        <view>对局#{{item.id}}</view>
+        <view class="sub-title">{{item.status || '进行中'}}</view>
+      </view>
+      <view class="sub-title mt8">时间：{{item.createTime || '-'}}</view>
+      <view class="sub-title mt8">参与人：{{item.userIds ? item.userIds.join(',') : '-'}}</view>
+      <view class="settle-btn" bindtap="goSettle" data-id="{{item.id}}">去结算</view>
+    </view>
+  </view>
+
+  <view class="card empty" wx:else>暂无对局</view>
+</view>

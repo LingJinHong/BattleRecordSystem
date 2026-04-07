@@ -1,0 +1,86 @@
+/* 全局样式 */
+@import '/miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss';
+
+
+page {
+    background: #f5f6fa;
+    color: #222;
+    font-size: 28rpx;
+}
+
+.container {
+    padding: 24rpx;
+    position: relative;
+    box-sizing: border-box;
+    height: calc(100vh - 48px);
+}
+
+.card {
+    background: #fff;
+    border-radius: 16rpx;
+    padding: 24rpx;
+    margin-bottom: 20rpx;
+    box-shadow: 0 6rpx 20rpx rgba(0, 0, 0, 0.04);
+}
+
+.title {
+    font-size: 32rpx;
+    font-weight: 600;
+}
+
+.sub-title {
+    font-size: 24rpx;
+    color: #888;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.row-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-primary {
+    background: #1677ff;
+    color: #fff;
+    border-radius: 12rpx;
+    padding: 14rpx 24rpx;
+    text-align: center;
+}
+
+.btn-danger {
+    background: #ff4d4f;
+    color: #fff;
+    border-radius: 12rpx;
+    padding: 14rpx 24rpx;
+    text-align: center;
+}
+
+.input {
+    height: 72rpx;
+    border: 1rpx solid #ddd;
+    border-radius: 10rpx;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    background: #fff;
+}
+
+.amount-plus {
+    color: #12b76a;
+    font-weight: 600;
+}
+
+.amount-minus {
+    color: #f04438;
+    font-weight: 600;
+}
+
+.empty {
+    text-align: center;
+    color: #999;
+    padding: 40rpx 0;
+}

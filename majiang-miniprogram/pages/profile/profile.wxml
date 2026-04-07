@@ -1,0 +1,19 @@
+<!-- pages/profile/profile.wxml -->
+<view class="profile-container">
+  <view wx:if="{{!user}}" class="login-box">
+    <!-- ✅ 必须用button的bindtap触发，唯一合法触发方式 -->
+    <button 
+      bindtap="onGetProfile" 
+      loading="{{isLoading}}"
+      disabled="{{isLoading}}"
+      class="login-btn"
+    >
+      {{isLoading ? '登录中...' : '点击授权登录'}}
+    </button>
+  </view>
+
+  <view wx:else class="user-info">
+    <image class="avatar" src="{{user.avatarUrl}}" mode="aspectFill"></image>
+    <view class="nickname">{{user.nickName}}</view>
+  </view>
+</view>

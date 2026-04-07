@@ -1,0 +1,25 @@
+<!-- 自定义授权引导弹窗 -->
+<view class="container">
+    <view class="login-page">
+        <view class="title">微信快捷登录</view>
+        <button open-type="chooseAvatar" bindchooseavatar="onChooseAvatar" class="avatar-btn">
+            <image class="avatar-icon" src="{{avatarUrl|| '/images/tab_friends.png'}}" mode="cover"></image>
+        </button>
+        <input type="nickname" value="{{nickName}}" bindinput="onInputNick" placeholder="点击选择微信昵称" />
+        <button class="submit-btn" bindtap="confirmAuth">确认登录</button>
+    </view>
+
+    <view class="desc">需要获取您的头像昵称，用于完善个人资料</view>
+
+
+
+    <view class="modal-mask">
+        <!-- <view class="modal-content">
+        <view class="modal-title">授权提示</view>
+        <view class="modal-buttons">
+            <button bindtap="cancelAuth">取消</button>
+            <button bindtap="confirmAuth" type="primary">同意授权</button>
+        </view>
+    </view> -->
+    </view>
+</view>

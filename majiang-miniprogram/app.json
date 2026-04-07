@@ -1,0 +1,52 @@
+{
+    "pages": [
+        "pages/splash/splash",
+        "pages/home/home",
+        "pages/game/game",
+        "pages/friend/friend",
+        "pages/team/team",
+        "pages/profile/profile",
+        "pages/game-create/game-create",
+        "pages/game-settle/game-settle",
+        "pages/game-detail/game-detail",
+        "pages/battle-detail/battle-detail",
+        "pages/team-detail/team-detail"
+    ],
+    "window": {
+        "navigationBarTitleText": "麻将战绩",
+        "navigationBarBackgroundColor": "#ffffff",
+        "navigationBarTextStyle": "black",
+        "backgroundColor": "#f5f6fa",
+        "backgroundTextStyle": "light"
+    },
+    "tabBar": {
+        "position": "top",
+        "color": "#666666",
+        "selectedColor": "#1677ff",
+        "backgroundColor": "#ffffff",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/game/game",
+                "text": "对局"
+            },
+            {
+                "pagePath": "pages/friend/friend",
+                "text": "好友"
+            },
+            {
+                "pagePath": "pages/team/team",
+                "text": "小队"
+            },
+            {
+                "pagePath": "pages/profile/profile",
+                "text": "我的"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}
