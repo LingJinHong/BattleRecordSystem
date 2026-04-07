@@ -1,0 +1,10 @@
+package com.majiang.backend.mapper;
+
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.majiang.backend.entity.AppUserData;
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
+public interface AppUserDataMapper extends BaseMapper<AppUserData> {
+}
+

@@ -1,0 +1,16 @@
+<view class="container" wx:if="{{detail}}">
+  <view class="card">
+    <view class="title">对局详情 #{{detail.id}}</view>
+    <view class="sub-title mt8">时间：{{detail.createTime || '-'}}</view>
+    <view class="sub-title mt8">小队：{{detail.teamName || detail.teamId || '-'}}</view>
+    <view class="sub-title mt8">状态：{{detail.status || '-'}}</view>
+  </view>
+
+  <view class="card">
+    <view class="title">玩家结果</view>
+    <view class="row-between result-item" wx:for="{{players}}" wx:key="userId">
+      <view>{{item.userName || ('用户' + item.userId)}}</view>
+      <view class="{{Number(item.amount) >= 0 ? 'amount-plus' : 'amount-minus'}}">{{item.amount}}</view>
+    </view>
+  </view>
+</view>

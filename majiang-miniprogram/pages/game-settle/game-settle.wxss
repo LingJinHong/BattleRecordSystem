@@ -1,0 +1,38 @@
+.player-row {
+  display: flex;
+  align-items: center;
+  margin-top: 16rpx;
+}
+
+.name {
+  width: 220rpx;
+  font-size: 28rpx;
+}
+
+.amount-input {
+  flex: 1;
+}
+
+.label {
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  color: #666;
+}
+
+.total {
+  margin: 22rpx 0;
+  font-size: 30rpx;
+  font-weight: 600;
+}
+
+.total.ok {
+  color: #12b76a;
+}
+
+.total.error {
+  color: #f04438;
+}
+
+.disabled {
+  opacity: 0.6;
+}

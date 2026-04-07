@@ -1,0 +1,22 @@
+# Build output
+/target/
+
+# Maven local repo cache in project (should not be committed)
+/.m2/
+
+# Runtime uploads
+/uploads/
+
+# IDE
+/.idea/
+*.iml
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+
+# Env files
+.env
+.env.*
