@@ -3,7 +3,7 @@
         <view class="title">对局详情 </view>
         <view class="sub-title mt8">时间：{{detail.gameTime || '-'}}</view>
         <view class="sub-title mt8">小队：{{detail.teamName || '-'}}</view>
-        <view class="sub-title mt8">状态：{{detail.status=='FINISHED'?'已结算':'未结算'}}</view>
+        <view class="sub-title mt8">状态：{{detail.status=='FINISHED'?'已结算':'进行中'}}</view>
     </view>
 
     <view class="card">
